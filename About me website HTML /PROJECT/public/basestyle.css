@@ -1,0 +1,238 @@
+/* 1. AUTOMATIC SIZING AND GLOBAL  */
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding-bottom: 200px;
+    /* --> SPACE FOR FIXED MOBILE NAV */
+    font-family: "Montserrat", "Consolas", "sans-serif";
+}
+
+p {
+    word-spacing: 3px;
+    padding: 4px;
+}
+
+/* 2. THEME VARIABLE */
+:root {
+    --bg-color: linear-gradient(#87ceeb, white);
+    --text-color: black;
+
+    --nav-bg: lightgrey;
+    --nav-text: purple;
+
+    --bg-attachment: fixed;
+    --bg-size: cover;
+    --bg-position: center;
+    --height: auto;
+    --width: auto;
+    /* for nav pseudo theme */
+    --nav-hover-bg: darkolivegreen;
+    --nav-hover-text: white;
+    --nav-focus-bg: lightblue;
+    --nav-active-bg: tomato;
+    /* for aria current */
+    --aria-bg: darkgrey;
+    --aria-text: palegreen;
+
+    --box-bg: linear-gradient(lightcyan, white);
+    --box-border: green;
+}
+
+/* Application of my themes */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+    z-index: 10;
+    /* Z-Index, controls the front/back layering just as X: left/right, Y: up/down, 
+    so the Higher Z index number appears or layers front and lower appears or layers behind. */
+}
+
+
+/* 4. HEADING AND FOOTER */
+header,
+main {
+    font-family: "Montserrat", "consolas", sans-serif;
+}
+
+h1,
+/* --> was only visible becasue the font link was only linked to my interests  html */
+h2 {
+    font-family: "Press Start 2p", "Montserrat", "consolas", sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* 5. FOR MY NAVIGATION (MOBILE FIRST) */
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    /* --> stacks vertically */
+}
+
+nav ul li {
+    margin: 0 15px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-text);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Hover / Focus / active */
+nav a:hover {
+    /* --> useful for mouse users who are moving cursours around links */
+    color: var(--nav-hover-text);
+    background-color: var(--nav-hover-bg);
+    font-size: 1.1em;
+    transform: translateX(7px);
+}
+
+/* for keyboard users who uses TAB */
+nav a:focus {
+    background-color: lightblue;
+    font-size: 1.1em;
+    outline: 2px solid;
+}
+
+nav a:active {
+    background-color: tomato;
+    font-size: 1.1em;
+}
+
+/* to let you know which current page you are */
+a[aria-current] {
+    margin: 0px;
+    color: var(--aria-text);
+    background-color: var(--aria-bg);
+}
+
+/* 6. Edit on index.html for the 2 Paragraphs */
+.box {
+    border: 2px var(--box-bg) solid;
+    /* thickness, style, color */
+    padding: 10px;
+    /* space inside the box */
+    margin: 10px;
+    /* space outside the box */
+    background: var(--box-bg);
+    border-radius: 10px;
+    /* round corners */
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.7);
+
+    /* to create shadow around the box | it has horizontal shift, vertical shift, the color Red Green Blue Alpha rgba( color, opacity).
+        */
+    transition: 0.3s ease
+        /* smooth animation */
+}
+
+.box:hover {
+    transform: translateY(-3px);
+    /* move up on hover */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* 7. DESKTOP SCREEN SIZE SETTING */
+@media screen and (min-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+        bottom: auto;
+    }
+
+
+    nav ul {
+        /* --> min width if the size is 768 and above make the screen size change */
+        display: flex;
+        /* --> display horizontal */
+        justify-content: center;
+    }
+
+
+}
+
+/* 3. DARK MODE (AUTO) BASED ON DEVICE SETTINGS */ 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: black;
+        --text-color: white;
+        --nav-bg: purple;
+        --nav-text: white;
+        --box-color: white;
+        --box-bg: purple;
+    }
+    .butn{
+        color: tomato;
+        font-size: 1.1em
+    }
+    .box {
+        background-color: #374151;
+    }
+
+    .icons a {
+        color: rgba(30, 48, 80, 1.00);
+        text-decoration: none;
+    }
+
+    .icons a:hover {
+        color: rgb(8, 94, 242);
+        font-size: 1.1em;
+    }
+
+    /* for keyboard users who uses TAB */
+    .icons a:focus {
+        color: lightblue;
+        font-size: 1.1em;
+    }
+
+    .icons a:active {
+        color: tomato;
+        font-size: 1.1em;
+    }
+}
+*/
+
+
+/* 8. RESPONSIVE IMAGE */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* 9. FOOTER */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    font-family: cursive;
+}

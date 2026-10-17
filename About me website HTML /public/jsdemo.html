@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a demonstration of my js and css page">
+    <meta name="author" content="Moyin David">
+    <link rel="stylesheet" href="basestyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jsdemo.css">
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Daveed">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#87ceeb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title>JavaScript Demo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a aria-current="page" href="demos.html">Demos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box" id="box10"></div>
+        <h1> JavaScript Demo Intro</h1>
+        <p>
+            Hello there! Welcome! We would be going through some Demos on JavaScript together, where we would see things
+            in action
+            about JavaScript.
+        </p>
+
+
+        <div class="box" id="box11"></div>
+        <div class="box">
+            <h2>1. A simple Math Calculation</h2>
+            <p>To start of with something simple we would be calculating the circumference of a circle using pi as
+                3.142,
+                input a radius and using formular
+                C = 2 pi r </p>
+            <br>
+
+            <label><i>Radius:</i></label>
+            <input type="number" id="MyInput">
+            <br><br>
+            <button id="ToSubmit">Submit</button>
+            <h3 id="myh3"></h3>
+        </div>
+
+        <div class="box" id="box12">
+            <h2>2. A Simple Counter</h2>
+            <h3 id="countnbr">0</h3>
+            <div class="countbtn">
+                <button class="btn" id="decreasebtn">Decrease (-)</button>
+                <button class="btn" id="resetbtn">Reset</button>
+                <button class="btn" id="increasebtn">Increase (+)</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="jsdemo.js"></script>
+    <footer>
+        <p>My name is Moyin David 25019606 and I am studying a degree in CyberSecurity at University of Staffordshire
+        </p>
+    </footer>
+</body>
+
+</html>

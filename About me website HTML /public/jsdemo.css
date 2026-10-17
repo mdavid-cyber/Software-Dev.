@@ -1,0 +1,27 @@
+#countnbr{
+    display: block;
+    text-align: center;
+    font-size: 5em;
+}
+
+.countbtn{
+    display:block;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.btn{
+    background-color: hsl(240, 41%, 45%);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    margin: 10px
+}
+
+.btn:hover{
+    background-color:blueviolet;
+    transform: translateY(-3px);
+}
