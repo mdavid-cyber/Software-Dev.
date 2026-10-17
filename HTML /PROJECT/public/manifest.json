@@ -1,0 +1,58 @@
+{
+    "name": "MoyinDavid",
+    "short_name": "Daveed",
+    "icons": [
+        {
+            "src": "icons/web-app-manifest-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/web-app-manifest-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "theme_color": "#87ceeb",
+    "background_color": "#87ceeb",
+    "display": "standalone",
+    "id": "index.html",
+    "start_url": "/",
+    "description": "A personal portfolio showcasing qualifications, demos and interests built using web standard",
+    "shortcuts": [
+        {
+            "name": "MoyinDavid",
+            "short_name": "Daveed",
+            "description": "About David ",
+            "url": "index.html",
+            "icons": [
+                {
+                    "src": "icons/maskable_icon_x192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "icons/Screenshot 1.png",
+            "type": "image/png",
+            "sizes": "500x609",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "icons/Screenshot 2.png",
+            "type": "image/png",
+            "sizes": "405x320",
+            "form_factor": "wide"
+        }
+    ]
+}

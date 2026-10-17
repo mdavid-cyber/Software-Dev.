@@ -1,0 +1,120 @@
+
+/* 2. For my pic on index.html */
+#mepix {
+    height: auto;
+    max-width: 350px;
+    width: 30%;
+    display: inline-block;
+    margin: 2rem auto;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-left: 15px;
+    box-shadow: -5px 4px 8px rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease
+}
+
+#mepix:hover{
+    transform: translateY(-3px);
+}
+
+/* 3. for my banner pic on interest.html and ol list*/
+#cyberbanner {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    margin: auto; /* Auto does not work with display */
+    border-radius: 20px;
+    transition: 0.3s ease;
+    box-shadow: 5px 3px 10px  rgba(0, 0, 0, 0.7);   
+}
+
+#ol1 li span{
+    display: inline-block;
+    padding:10px;
+    transition:  0.3s ease;
+}
+#ol1 li span:hover{
+    background-color: yellow;
+    transform: translateY(3px);
+}
+
+
+/* 4. */
+#stars {
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#bodylink {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    text-align: center;
+    color: aqua;
+}
+
+#bodylink a:hover {
+    background-color: blue;
+    font-size: 1.5em;
+
+}
+
+#bodylink a:focus {
+    background-color: lightblue;
+    font-size: 1.1em;
+}
+
+#bodylink a:active {
+    background-color: tomato;
+    font-size: 1.1em;
+}
+
+
+/* table */
+#tab {
+    border: solid 2px;
+    background: rgb(0, 0, 0);
+    margin: 0 auto;
+
+}
+
+.tr {
+    background-color: lightblue;
+    text-align: center;
+
+}
+
+/* actions for my lists 
+
+
+ul li:hover {
+    background-color: hsl(60, 100%, 72%);
+}
+
+ol li:hover {
+    background-color: hsl(60, 100%, 72%);
+
+}
+
+*/
+
+
+#linkedin img{
+    display: block;
+    width: 50px;
+    margin-left: 30px;
+    height: auto;
+    transition: 0.3s ease;
+}
+
+#linkedin:hover img{
+    transform: translateY(-6px);
+}
+#linkedin:focus img{
+    background-color: tomato;
+}
+#linkedin:active img{
+    background-color: lightgray
+}

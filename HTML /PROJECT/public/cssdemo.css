@@ -1,0 +1,158 @@
+/*  GLOBAL  */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: hsl(163, 61%, 20%);
+    color: #e5e5e5;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+h1, h2 {
+    color: #00ffd5;
+    text-align: center;
+}
+
+/*  NAVIGATION */
+.menu {
+    background: #181820;
+}
+
+.menu button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background: #00ffd5;
+    border: 2px solid red;
+    cursor: pointer;
+    
+}
+
+/* Hide nav by default (mobile) */
+.menu nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #2a2a35;
+}
+
+/* Show dropdown on hover */
+.menu:hover nav ul {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav a:hover {
+    background: #111;
+    color: #00ffd5;
+}
+
+/* ===== CONTENT BOXES ===== */
+.boxcontainer {
+    display: block;   /* stacked on mobile */
+}
+
+.boxed {
+    background: #2a2a35;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+/* Alternate colours (cleaner than giant borders) */
+.boxed:nth-child(even) {
+    background: cadetblue;
+}
+
+.boxed:nth-child(odd) {
+    background: purple;
+}
+
+/* ===== DESKTOP VERSION ===== */
+@media screen and (min-width: 768px) {
+
+    /* Hide mobile button */
+    .menu button {
+        display: none;
+    }
+
+    /* Show nav permanently */
+    .menu nav ul {
+        display: flex;
+        justify-content: center;
+        background: #181820;
+    }
+
+    /* Horizontal spacing */
+    nav a {
+        display: inline-block;
+    }
+
+    /* FLEX CONTENT */
+    .boxcontainer {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .boxed {
+        flex: 1;   /* equal width columns */
+        margin-bottom: 0;
+    }
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background: #0f1115;
+        color: #e5e5e5;
+    }
+
+    .menu {
+        background: #111827;
+    }
+
+    .menu nav ul {
+        background: #1f2937;
+    }
+
+    nav a {
+        color: #d1d5db;
+    }
+
+    nav a:hover {
+        background: #374151;
+        color: #00ffd5;
+    }
+
+    .boxed {
+        background: #1f2937;
+    }
+
+    .boxed:nth-child(even) {
+        background: #334155;
+    }
+
+    .boxed:nth-child(odd) {
+        background: #312e81;
+    }
+
+    footer {
+        background: #111827;
+    }
+}
